@@ -1,0 +1,948 @@
+/* Global [Start] */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+}
+
+:root {
+  --red: #ca0003;
+  --green: #02b443;
+  --yellow: #fedd34;
+  --cyan: #018ec2;
+  --border-color: #feffff;
+  --width-card: ;
+  --height-card: ;
+  --light-uno: #59585b;
+  --yellow-triangle: #feee1a;
+}
+
+h2 {
+  color: #fff;
+}
+
+.title {
+  width: fit-content;
+  margin: 40px auto 0;
+  font-size: 50px;
+}
+/* Global [End] */
+
+.menu-cards {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 170px);
+  column-gap: 160px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  width: 170px;
+  height: 270px;
+  border-radius: 25px;
+  border: solid 10px var(--border-color);
+  user-select: none;
+}
+
+
+
+/*! Red Card [Start] */
+.red-card {
+  background-color: var(--red);
+  z-index: 9;
+}
+
+.red-card .center-circle {
+  background-color: #f08d8e;
+}
+
+.red-card .center-circle .uno-word {
+  color: #ffb816;
+  font-size: 77px;
+  font-weight: bold;
+  transform: rotate(-55deg) translate(-75px, 40px);
+  text-shadow:
+    -1px 1px 0px #010001,
+    -2px 2px 0px #010001,
+    -3px 3px 0px #010001,
+    -4px 4px 0px #010001,
+    -5px 5px 0px #010001,
+    -6px 6px 0px #010001,
+    -7px 7px 0px #010001,
+    -8px 8px 0px #010001,
+    -9px 9px 0px #010001;
+  position: relative;
+}
+
+.red-card .center-circle .uno-word .on-letter-u {
+  position: absolute;
+  left: -2%;
+  top: 60%;
+  width: 8px;
+  height: 7px;
+  background-color: var(--light-uno);
+  transform: skewY(-45deg);
+}
+
+.red-card .center-circle .uno-word .on-letter-u::before {
+  content: '';
+  position: absolute;
+  left: 14%;
+  top: 162%;
+  width: 9px;
+  height: 4px;
+  background-color: var(--light-uno);
+  transform: skew(10deg, 357deg);
+}
+
+.red-card .center-circle .uno-word .on-letter-n {
+  position: absolute;
+  left: 67.4%;
+  top: 30%;
+  width: 8px;
+  height: 4px;
+  background-color: var(--light-uno);
+  transform: skew(352deg, 316deg);
+}
+
+.red-card .center-circle .uno-word .on-letter-o {
+  position: absolute;
+  left: 114.2%;
+  top: 36%;
+  width: 7px;
+  height: 7px;
+  background-color: var(--light-uno);
+  transform: skew(26deg, 309deg);
+}
+
+.red-card .center-circle .uno-word .on-letter-o::before {
+  content: '';
+  position: absolute;
+  left: -16%;
+  top: 143%;
+  width: 6px;
+  height: 2px;
+  background-color: var(--light-uno);
+  transform: skew(324deg, 5deg);
+}
+/*! Red Card [End] */
+
+
+
+
+/** Green Card [Start] */
+.green-card {
+  background-color: var(--green);
+}
+
+.center-circle {
+  width: 75%;
+  height: 90%;
+  border-radius: 50%;
+  border: solid 10px var(--border-color);
+  position: relative;
+  transform: rotate(26deg) translate(12px);
+  -webkit-transform: rotate(26deg) translate(12px);
+  -moz-transform: rotate(26deg) translate(12px);
+  -ms-transform: rotate(26deg) translate(12px);
+  -o-transform: rotate(26deg) translate(12px);
+}
+
+.green-card .center-circle {
+  background-color: #96e8a6;
+}
+
+
+
+/* Green hand */
+.green-card .center-circle .green-handshake {
+  background-color: #00a520;
+  border: solid 3px black;
+  border-bottom: none;
+  border-left: none;
+  width: 50px;
+  height: 125px;
+  margin-left: 55px;
+  margin-top: 17px;
+  transform: rotate(15deg);
+}
+
+.green-card .center-circle .green-handshake::before {
+  content: '';
+  position: absolute;
+  left: -19%;
+  top: 4.3%;
+  border-top: solid 3px black;
+  width: 18px;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+.green-card .center-circle .green-handshake::after {
+  content: '';
+  position: absolute;
+  left: -56%;
+  top: 17.5%;
+  border: solid 3px;
+  border-color: transparent transparent black transparent;
+  width: 31px;
+  height: 12px;
+  transform: rotate(149deg);
+  background-color: #00a520;
+}
+
+.green-card .center-circle .green-handshake .thumb-line {
+  border: solid 3px transparent;
+  border-top-color: black;
+  border-radius: 50%/45%;
+  width: 19px;
+  height: 11px;
+  position: absolute;
+  left: -38px;
+  top: 33px;
+  transform: rotate(-67.4deg);
+  z-index: 2;
+}
+
+.green-card .center-circle .green-handshake .paint-green-handshake {
+  background-color: #00a520;
+  width: 38px;
+  height: 40px;
+  position: absolute;
+  left: -26px;
+  top: 32px;
+  z-index: -1;
+}
+
+.green-card .center-circle .green-handshake .paint-green-handshake::before {
+  content: '';
+  position: absolute;
+  left: -21%;
+  top: 0%;
+  width: 24px;
+  height: 24px;
+  background-color: #00a520;
+  border-radius: 40%;
+}
+
+.green-card .center-circle .container-green-fingers {
+  width: 65px;
+  height: 42px;
+  transform: rotate(15deg);
+  position: absolute;
+  left: 12px;
+  top: 132px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 10;
+}
+
+.green-card .center-circle .container-green-fingers .green-fingers {
+  width: 15px;
+  height: 30px;
+  background-color: #00a520;
+  border-radius: 50px;
+  box-shadow: 0 13px black;
+}
+
+.green-card .center-circle .container-green-fingers .green-fingers::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  background-color: black;
+  width: 70%;
+  height: 49%;
+  z-index: -1;
+}
+
+.green-card .center-circle .thumb {
+  background-color: #00a520;
+  width: 16px;
+  height: 55px;
+  position: absolute;
+  left: 28px;
+  top: 51px;
+  border-radius: 50px;
+  z-index: 40;
+}
+
+.green-card .center-circle .thumb::before {
+  content: '';
+  position: absolute;
+  left: 85%;
+  top: 40%;
+  background-color: #00a520;
+  width: 20px;
+  height: 20px;
+  transform: rotate(13deg);
+}
+
+.green-card .center-circle .thumb::after {
+  content: '';
+  position: absolute;
+  left: 98%;
+  top: 50%;
+  background-color: #4fe812;
+  width: 25px;
+  height: 25px;
+  transform: rotate(13deg);
+  border-radius: 50%;
+}
+
+.green-card .center-circle .light-shadow-parts {
+  background-color: var(--light-uno);
+  position: absolute;
+  left: -25px;
+  top: 123px;
+  width: 20px;
+  height: 17px;
+  transform: rotate(15deg);
+  z-index: 10;
+}
+
+.green-card .center-circle .light-shadow-parts::before {
+  content: '';
+  position: absolute;
+  left: 140%;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background-color: var(--light-uno);
+}
+
+.green-card .center-circle .light-shadow-parts::after {
+  content: '';
+  position: absolute;
+  left: 300%;
+  top: 126%;
+  width: 15%;
+  height: 80%;
+  background-color: var(--light-uno);
+  transform: rotate(-5deg);
+  border-top-right-radius: 50px;
+}
+
+
+
+/* GreenYellow hand */
+.green-card .center-circle .greenyellow-handshake {
+  background-color: #4fe812;
+  border: solid 3px black;
+  border-bottom: none;
+  border-right: none;
+  width: 60px;
+  height: 110px;
+  transform: rotate(-75deg);
+  position: absolute;
+  top: 20%;
+  left: 0;
+  box-shadow: -17px 0px black;
+}
+
+.green-card .center-circle .greenyellow-handshake::before {
+  content: '';
+  position: absolute;
+  left: 84.9%;
+  top: 4%;
+  border-top: solid 3px black;
+  width: 16px;
+  transform: rotate(90deg);
+}
+
+.green-card .center-circle .greenyellow-handshake::after {
+  content: '';
+  position: absolute;
+  left: 72.3%;
+  top: 17%;
+  border-bottom: solid 3px black;
+  border-top-right-radius: 10%;
+  width: 36px;
+  height: 20px;
+  transform: rotate(233deg);
+  background-color: #4fe812;
+}
+
+.green-card .center-circle .container-greenyellow-fingers {
+  width: 65px;
+  height: 42px;
+  transform: rotate(-75deg);
+  position: absolute;
+  left: 60px;
+  top: 101px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 9;
+}
+
+.green-card .center-circle .container-greenyellow-fingers .greenyellow-fingers {
+  width: 17px;
+  height: 40px;
+  background-color: #4fe812;
+  border-radius: 50px;
+  box-shadow: -2px 4px black;
+}
+
+.green-card .center-circle .container-greenyellow-fingers .greenyellow-fingers::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 16px;
+  width: 26px;
+  height: 20px;
+  z-index: 72;
+}
+
+.green-card .center-circle .shadow {
+  background-color: black;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  left: 67px;
+  top: 153px;
+  transform: rotate(13deg);
+  border-bottom-right-radius: 40%;
+}
+/** Green Card [End] */
+
+
+
+
+/*TODO Yellow Card [Start] */
+.yellow-card {
+  background-color: var(--yellow);
+}
+
+.yellow-card .center-circle {
+  background-color: #fcf393;
+}
+
+.yellow-card .center-circle .container-records {
+  width: 180px;
+  height: 150px;
+  position: absolute;
+  left: -20px;
+  top: 45px;
+  transform: rotate(-26deg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.yellow-card .center-circle .container-records ._2nd-box {
+  background-color: #f8253e;
+  width: 40px;
+  height: 60px;
+  box-shadow:
+    -1px 1px black,
+    -2px 2px black,
+    -3px 3px black,
+    -4px 4px black,
+    -5px 5px black,
+    -6px 6px black,
+    -7px 7px black,
+    -8px 8px black;
+  position: relative;
+}
+
+.yellow-card .center-circle .container-records ._2nd-box .box-shadow {
+  background-color: var(--light-uno);
+  width: 6px;
+  height: 30px;
+  position: absolute;
+  left: -6px;
+  top: 8px;
+  transform: skewY(-45deg);
+}
+
+.yellow-card .center-circle .container-records ._2nd-box .box-shadow::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 140%;
+  width: 100%;
+  height: 6px;
+  background-color: var(--light-uno);
+}
+
+.yellow-card .center-circle .container-records ._2nd-box .box-shadow::after {
+  content: '';
+  position: absolute;
+  left: 400%;
+  top: 247%;
+  width: 60%;
+  height: 6px;
+  background-color: var(--light-uno);
+  transform: skewY(45deg) skewX(-45deg);
+}
+
+.yellow-card .center-circle .container-records ._2nd-box p {
+  opacity: 0.4;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 13px;
+}
+
+.yellow-card .center-circle .container-records ._1st-box {
+  background-color: #fec634;
+  width: 40px;
+  height: 80px;
+  box-shadow:
+    -1px 1px black,
+    -2px 2px black,
+    -3px 3px black,
+    -4px 4px black,
+    -5px 5px black,
+    -6px 6px black,
+    -7px 7px black,
+    -8px 8px black;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.yellow-card .center-circle .container-records ._1st-box .box-shadow {
+  background-color: var(--light-uno);
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  left: -6px;
+  top: 10px;
+  transform: skewY(-45deg);
+}
+
+.yellow-card .center-circle .container-records ._1st-box .box-shadow::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 400%;
+  width: 100%;
+  height: 5px;
+  background-color: var(--light-uno);
+}
+
+.yellow-card .center-circle .container-records ._1st-box .box-shadow::after {
+  content: '';
+  position: absolute;
+  left: 300%;
+  top: 868%;
+  width: 60%;
+  height: 6px;
+  background-color: var(--light-uno);
+  transform: skewY(45deg) skewX(-45deg);
+}
+
+.yellow-card .center-circle .container-records ._1st-box p {
+  opacity: 0.4;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 7px;
+}
+
+.yellow-card .center-circle .container-records ._3rd-box {
+  background-color: var(--cyan);
+  width: 40px;
+  height: 50px;
+  box-shadow:
+    -1px 1px black,
+    -2px 2px black,
+    -3px 3px black,
+    -4px 4px black,
+    -5px 5px black,
+    -6px 6px black,
+    -7px 7px black,
+    -8px 8px black;
+  position: relative;
+  margin-top: 10px;
+}
+
+.yellow-card .center-circle .container-records ._3rd-box .box-shadow {
+  background-color: var(--light-uno);
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  left: -7px;
+  top: 30px;
+  transform: skewY(-45deg);
+}
+
+.yellow-card .center-circle .container-records ._3rd-box p {
+  opacity: 0.4;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 7px;
+  padding-left: 3px;
+}
+/*TODO Yellow Card [End] */
+
+
+
+
+
+/*? Cyan or Blue [Start] */
+.cyan-card {
+  background-color: var(--cyan);
+}
+
+.cyan-card .center-circle {
+  background-color: #85c6f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cyan-card .center-circle .medal {
+  transform: rotate(-25deg);
+  margin-bottom: 40px;
+}
+
+.cyan-card .center-circle .medal .circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fdf114;
+  border: solid 4px #c78e00;
+  outline: solid 5px var(--yellow-triangle);
+  border-radius: 50%;
+  position: relative;
+}
+
+.cyan-card .center-circle .medal .circle p {
+  opacity: 0.8;
+  font-size: 40px;
+  font-weight: bold;
+  color: #dca416;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cyan-card .center-circle .medal .circle .triangle {
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-bottom-color: var(--yellow-triangle);
+  position: absolute;
+  left: 30px;
+  top: -44px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle::before {
+  content: '';
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-top-color: var(--yellow-triangle);
+  position: absolute;
+  left: -20px;
+  top: 128px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle2 {
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-right-color: var(--yellow-triangle);
+  position: absolute;
+  left: -44px;
+  top: 30px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle2::before {
+  content: '';
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-left-color: var(--yellow-triangle);
+  position: absolute;
+  left: 128px;
+  top: -20px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle3 {
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-right-color: var(--yellow-triangle);
+  position: absolute;
+  left: -35px;
+  top: -6px;
+  transform: rotate(30deg);
+}
+
+.cyan-card .center-circle .medal .circle .triangle3::before {
+  content: '';
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-left-color: var(--yellow-triangle);
+  position: absolute;
+  left: 128px;
+  top: -20px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle4 {
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-right-color: var(--yellow-triangle);
+  position: absolute;
+  left: -7px;
+  top: -34px;
+  transform: rotate(60deg);
+}
+
+.cyan-card .center-circle .medal .circle .triangle4::before {
+  content: '';
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-left-color: var(--yellow-triangle);
+  position: absolute;
+  left: 128px;
+  top: -20px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle5 {
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-right-color: var(--yellow-triangle);
+  position: absolute;
+  left: 95px;
+  top: -6px;
+  transform: rotate(150deg);
+}
+
+.cyan-card .center-circle .medal .circle .triangle5::before {
+  content: '';
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-left-color: var(--yellow-triangle);
+  position: absolute;
+  left: 128px;
+  top: -20px;
+}
+
+.cyan-card .center-circle .medal .circle .triangle6 {
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-right-color: var(--yellow-triangle);
+  position: absolute;
+  left: 67px;
+  top: -34px;
+  transform: rotate(120deg);
+}
+
+.cyan-card .center-circle .medal .circle .triangle6::before {
+  content: '';
+  border: solid 20px transparent;
+  box-sizing: border-box;
+  border-left-color: var(--yellow-triangle);
+  position: absolute;
+  left: 128px;
+  top: -20px;
+}
+
+.cyan-card .center-circle .medal .fabric {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: -1;
+}
+
+.cyan-card .center-circle .medal .fabric .fabric-left {
+  width: 38px;
+  height: 40px;
+  background-color: #2ba1fb;
+  transform: rotate(20deg);
+  margin-left: 18px;
+}
+
+.cyan-card .center-circle .medal .fabric .fabric-left::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #2ba1fb;
+  border-right: 20px solid transparent;
+}
+
+.cyan-card .center-circle .medal .fabric .fabric-left::after {
+  content: '';
+  position: absolute;
+  left: 48%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #2ba1fb;
+  border-left: 20px solid transparent;
+}
+
+.cyan-card .center-circle .medal .fabric .fabric-right {
+  width: 38px;
+  height: 40px;
+  background-color: #2ba1fb;
+  transform: rotate(-20deg);
+  position: absolute;
+  left: 52px;
+  top: 0px;
+}
+
+.cyan-card .center-circle .medal .fabric .fabric-right::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #2ba1fb;
+  border-right: 20px solid transparent;
+}
+
+.cyan-card .center-circle .medal .fabric .fabric-right::after {
+  content: '';
+  position: absolute;
+  left: 48%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #2ba1fb;
+  border-left: 20px solid transparent;
+}
+/*? Cyan or Blue [Start] */
+
+
+
+
+
+
+
+
+
+
+
+/* Game cards [Start] */
+.game-cards {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 170px);
+  gap: 80px;
+  justify-content: center;
+}
+
+.red {
+  background-color: #ca0003;
+}
+
+.yellow {
+  background-color: #efd12c;
+}
+
+.green {
+  background-color: #5aa837;
+}
+
+.blue {
+  background-color: #0063b0;
+}
+
+.game-cards .center-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-cards div span {
+  display: block;
+  color: #fff;
+  font-size: 140px;
+  rotate: -26deg;
+  font-weight: bold;
+  position: relative;
+}
+
+.game-cards div span::before,
+.game-cards div span::after {
+  content: attr(data-number);
+  position: absolute;
+  font-size: 50px;
+}
+
+.game-cards div span::before {
+  left: -38px;
+  top: -54px;
+}
+
+.game-cards div span.line::before {
+  left: -30px;
+  top: -40px;
+}
+
+.game-cards div span::after {
+  right: -36px;
+  bottom: -50px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.game-cards div span.line::after {
+  right: -36px;
+  bottom: -70px;
+}
+
+.game-cards div span.line {
+  text-decoration: underline;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.game-cards div span.line::before,
+.game-cards div span.line::after {
+  text-decoration: inherit;
+}
+/* Game cards [End] */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 950px) {
+  .container-uno {
+    width: 800px;
+    height: 770px;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(2, 350px);
+  }
+}
+
+@media (max-width: 578px) {
+  .container-uno {
+    width: 100%;
+    height: 1540px;
+    grid-template-columns: 170px;
+    grid-template-rows: repeat(2, 350px);
+  }
+
+  .copy-right {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+  }
+}
