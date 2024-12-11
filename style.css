@@ -33,7 +33,7 @@ body {
   padding: 40px;
   display: grid;
   grid-template-columns: repeat(4, 186px);
-  column-gap: 20px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -45,7 +45,7 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .menu-cards {
     grid-template-columns: repeat(2, 186px);
     gap: 20px;
@@ -834,40 +834,6 @@ body {
 
 
 /* Game cards [Start] */
-.game-cards {
-  padding: 80px;
-  display: grid;
-  grid-template-columns: repeat(5, 186px);
-  gap: 20px;
-  justify-content: center;
-}
-
-@media (max-width: 1200px) {
-  .game-cards {
-    grid-template-columns: repeat(4, 186px);
-  }
-}
-
-@media (max-width: 992px) {
-  .game-cards {
-    grid-template-columns: repeat(3, 186px);
-  }
-}
-
-@media (max-width: 992px) {
-  .game-cards {
-    grid-template-columns: repeat(2, 186px);
-    gap: 20px;
-  }
-}
-
-@media (max-width: 470px) {
-  .game-cards {
-    grid-template-columns: 186px;
-    gap: 20px;
-  }
-}
-
 .red {
   background-color: #ca0003;
 }
