@@ -1,12 +1,8 @@
-/* Global [Start] */
+/* Global Styles [Start] */
+
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #000;
 }
 
 :root {
@@ -15,22 +11,25 @@ body {
   --yellow: #fedd34;
   --cyan: #018ec2;
   --border-color: #feffff;
-  --width-card: ;
-  --height-card: ;
-  --light-uno: #59585b;
+  --shadow-color: #59585b;
   --yellow-triangle: #feee1a;
 }
 
-h2 {
-  color: #fff;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0c0c0c;
 }
 
 .title {
   width: fit-content;
   margin: 40px auto 0;
-  font-size: 50px;
+  font-size: 3.125rem;
+  color: #fff;
 }
-/* Global [End] */
+
+/* Global Styles [End] */
+
+/* Cards Containers [Start] */
 
 .menu-cards {
   padding: 40px;
@@ -49,7 +48,7 @@ h2 {
   user-select: none;
 }
 
-
+/* Cards Containers [End] */
 
 /*! Red Card [Start] */
 .red-card {
@@ -63,19 +62,19 @@ h2 {
 
 .red-card .center-circle .uno-word {
   color: #ffb816;
-  font-size: 77px;
+  font-size: 4.8125rem;
   font-weight: bold;
   transform: rotate(-55deg) translate(-75px, 40px);
   text-shadow:
-    -1px 1px 0px #010001,
-    -2px 2px 0px #010001,
-    -3px 3px 0px #010001,
-    -4px 4px 0px #010001,
-    -5px 5px 0px #010001,
-    -6px 6px 0px #010001,
-    -7px 7px 0px #010001,
-    -8px 8px 0px #010001,
-    -9px 9px 0px #010001;
+    -1px 1px #010001,
+    -2px 2px #010001,
+    -3px 3px #010001,
+    -4px 4px #010001,
+    -5px 5px #010001,
+    -6px 6px #010001,
+    -7px 7px #010001,
+    -8px 8px #010001,
+    -9px 9px #010001;
   position: relative;
 }
 
@@ -85,7 +84,7 @@ h2 {
   top: 60%;
   width: 8px;
   height: 7px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skewY(-45deg);
 }
 
@@ -96,7 +95,7 @@ h2 {
   top: 162%;
   width: 9px;
   height: 4px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skew(10deg, 357deg);
 }
 
@@ -106,7 +105,7 @@ h2 {
   top: 30%;
   width: 8px;
   height: 4px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skew(352deg, 316deg);
 }
 
@@ -116,7 +115,7 @@ h2 {
   top: 36%;
   width: 7px;
   height: 7px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skew(26deg, 309deg);
 }
 
@@ -127,15 +126,17 @@ h2 {
   top: 143%;
   width: 6px;
   height: 2px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skew(324deg, 5deg);
 }
+
 /*! Red Card [End] */
 
 
 
 
 /** Green Card [Start] */
+
 .green-card {
   background-color: var(--green);
 }
@@ -147,10 +148,6 @@ h2 {
   border: solid 10px var(--border-color);
   position: relative;
   transform: rotate(26deg) translate(12px);
-  -webkit-transform: rotate(26deg) translate(12px);
-  -moz-transform: rotate(26deg) translate(12px);
-  -ms-transform: rotate(26deg) translate(12px);
-  -o-transform: rotate(26deg) translate(12px);
 }
 
 .green-card .center-circle {
@@ -169,7 +166,7 @@ h2 {
   height: 125px;
   margin-left: 55px;
   margin-top: 17px;
-  transform: rotate(15deg);
+  rotate: 15deg;
 }
 
 .green-card .center-circle .green-handshake::before {
@@ -177,9 +174,9 @@ h2 {
   position: absolute;
   left: -19%;
   top: 4.3%;
-  border-top: solid 3px black;
+  border-top: solid 3px #000;
   width: 18px;
-  transform: rotate(90deg);
+  rotate: 90deg;
   z-index: 2;
 }
 
@@ -192,7 +189,7 @@ h2 {
   border-color: transparent transparent black transparent;
   width: 31px;
   height: 12px;
-  transform: rotate(149deg);
+  rotate: 149deg;
   background-color: #00a520;
 }
 
@@ -205,7 +202,7 @@ h2 {
   position: absolute;
   left: -38px;
   top: 33px;
-  transform: rotate(-67.4deg);
+  rotate: -67.4deg;
   z-index: 2;
 }
 
@@ -233,7 +230,7 @@ h2 {
 .green-card .center-circle .container-green-fingers {
   width: 65px;
   height: 42px;
-  transform: rotate(15deg);
+  rotate: 15deg;
   position: absolute;
   left: 12px;
   top: 132px;
@@ -255,7 +252,7 @@ h2 {
   position: absolute;
   left: 10%;
   top: 50%;
-  background-color: black;
+  background-color: #000;
   width: 70%;
   height: 49%;
   z-index: -1;
@@ -280,7 +277,7 @@ h2 {
   background-color: #00a520;
   width: 20px;
   height: 20px;
-  transform: rotate(13deg);
+  rotate: 13deg;
 }
 
 .green-card .center-circle .thumb::after {
@@ -291,18 +288,18 @@ h2 {
   background-color: #4fe812;
   width: 25px;
   height: 25px;
-  transform: rotate(13deg);
+  rotate: 13deg;
   border-radius: 50%;
 }
 
 .green-card .center-circle .light-shadow-parts {
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   position: absolute;
   left: -25px;
   top: 123px;
   width: 20px;
   height: 17px;
-  transform: rotate(15deg);
+  rotate: 15deg;
   z-index: 10;
 }
 
@@ -313,7 +310,7 @@ h2 {
   top: 0;
   width: 30%;
   height: 100%;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
 }
 
 .green-card .center-circle .light-shadow-parts::after {
@@ -323,8 +320,8 @@ h2 {
   top: 126%;
   width: 15%;
   height: 80%;
-  background-color: var(--light-uno);
-  transform: rotate(-5deg);
+  background-color: var(--shadow-color);
+  rotate: -5deg;
   border-top-right-radius: 50px;
 }
 
@@ -338,11 +335,11 @@ h2 {
   border-right: none;
   width: 60px;
   height: 110px;
-  transform: rotate(-75deg);
+  rotate: -75deg;
   position: absolute;
   top: 20%;
   left: 0;
-  box-shadow: -17px 0px black;
+  box-shadow: -17px 0px #000;
 }
 
 .green-card .center-circle .greenyellow-handshake::before {
@@ -350,9 +347,9 @@ h2 {
   position: absolute;
   left: 84.9%;
   top: 4%;
-  border-top: solid 3px black;
+  border-top: solid 3px #000;
   width: 16px;
-  transform: rotate(90deg);
+  rotate: 90deg;
 }
 
 .green-card .center-circle .greenyellow-handshake::after {
@@ -360,18 +357,18 @@ h2 {
   position: absolute;
   left: 72.3%;
   top: 17%;
-  border-bottom: solid 3px black;
+  border-bottom: solid 3px #000;
   border-top-right-radius: 10%;
   width: 36px;
   height: 20px;
-  transform: rotate(233deg);
+  rotate: 233deg;
   background-color: #4fe812;
 }
 
 .green-card .center-circle .container-greenyellow-fingers {
   width: 65px;
   height: 42px;
-  transform: rotate(-75deg);
+  rotate: -75deg;
   position: absolute;
   left: 60px;
   top: 101px;
@@ -385,7 +382,7 @@ h2 {
   height: 40px;
   background-color: #4fe812;
   border-radius: 50px;
-  box-shadow: -2px 4px black;
+  box-shadow: -2px 4px #000;
 }
 
 .green-card .center-circle .container-greenyellow-fingers .greenyellow-fingers::before {
@@ -399,15 +396,16 @@ h2 {
 }
 
 .green-card .center-circle .shadow {
-  background-color: black;
+  background-color: #000;
   width: 30px;
   height: 20px;
   position: absolute;
   left: 67px;
   top: 153px;
-  transform: rotate(13deg);
+  rotate: 13deg;
   border-bottom-right-radius: 40%;
 }
+
 /** Green Card [End] */
 
 
@@ -428,7 +426,7 @@ h2 {
   position: absolute;
   left: -20px;
   top: 45px;
-  transform: rotate(-26deg);
+  rotate: -26deg;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -439,19 +437,19 @@ h2 {
   width: 40px;
   height: 60px;
   box-shadow:
-    -1px 1px black,
-    -2px 2px black,
-    -3px 3px black,
-    -4px 4px black,
-    -5px 5px black,
-    -6px 6px black,
-    -7px 7px black,
-    -8px 8px black;
+    -1px 1px #000,
+    -2px 2px #000,
+    -3px 3px #000,
+    -4px 4px #000,
+    -5px 5px #000,
+    -6px 6px #000,
+    -7px 7px #000,
+    -8px 8px #000;
   position: relative;
 }
 
 .yellow-card .center-circle .container-records ._2nd-box .box-shadow {
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   width: 6px;
   height: 30px;
   position: absolute;
@@ -467,7 +465,7 @@ h2 {
   top: 140%;
   width: 100%;
   height: 6px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
 }
 
 .yellow-card .center-circle .container-records ._2nd-box .box-shadow::after {
@@ -477,13 +475,13 @@ h2 {
   top: 247%;
   width: 60%;
   height: 6px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skewY(45deg) skewX(-45deg);
 }
 
 .yellow-card .center-circle .container-records ._2nd-box p {
-  opacity: 0.4;
-  font-size: 40px;
+  opacity: .4;
+  font-size: 2.5rem;
   font-weight: bold;
   padding-left: 13px;
 }
@@ -493,20 +491,20 @@ h2 {
   width: 40px;
   height: 80px;
   box-shadow:
-    -1px 1px black,
-    -2px 2px black,
-    -3px 3px black,
-    -4px 4px black,
-    -5px 5px black,
-    -6px 6px black,
-    -7px 7px black,
-    -8px 8px black;
+    -1px 1px #000,
+    -2px 2px #000,
+    -3px 3px #000,
+    -4px 4px #000,
+    -5px 5px #000,
+    -6px 6px #000,
+    -7px 7px #000,
+    -8px 8px #000;
   position: relative;
   margin-bottom: 20px;
 }
 
 .yellow-card .center-circle .container-records ._1st-box .box-shadow {
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   width: 6px;
   height: 10px;
   position: absolute;
@@ -522,7 +520,7 @@ h2 {
   top: 400%;
   width: 100%;
   height: 5px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
 }
 
 .yellow-card .center-circle .container-records ._1st-box .box-shadow::after {
@@ -532,13 +530,13 @@ h2 {
   top: 868%;
   width: 60%;
   height: 6px;
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   transform: skewY(45deg) skewX(-45deg);
 }
 
 .yellow-card .center-circle .container-records ._1st-box p {
-  opacity: 0.4;
-  font-size: 40px;
+  opacity: .4;
+  font-size: 2.5rem;
   font-weight: bold;
   padding-left: 7px;
 }
@@ -548,20 +546,20 @@ h2 {
   width: 40px;
   height: 50px;
   box-shadow:
-    -1px 1px black,
-    -2px 2px black,
-    -3px 3px black,
-    -4px 4px black,
-    -5px 5px black,
-    -6px 6px black,
-    -7px 7px black,
-    -8px 8px black;
+    -1px 1px #000,
+    -2px 2px #000,
+    -3px 3px #000,
+    -4px 4px #000,
+    -5px 5px #000,
+    -6px 6px #000,
+    -7px 7px #000,
+    -8px 8px #000;
   position: relative;
   margin-top: 10px;
 }
 
 .yellow-card .center-circle .container-records ._3rd-box .box-shadow {
-  background-color: var(--light-uno);
+  background-color: var(--shadow-color);
   width: 6px;
   height: 10px;
   position: absolute;
@@ -572,11 +570,12 @@ h2 {
 
 .yellow-card .center-circle .container-records ._3rd-box p {
   opacity: 0.4;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   padding-top: 7px;
   padding-left: 3px;
 }
+
 /*TODO Yellow Card [End] */
 
 
@@ -584,6 +583,7 @@ h2 {
 
 
 /*? Cyan or Blue [Start] */
+
 .cyan-card {
   background-color: var(--cyan);
 }
@@ -596,7 +596,7 @@ h2 {
 }
 
 .cyan-card .center-circle .medal {
-  transform: rotate(-25deg);
+  rotate: -25deg;
   margin-bottom: 40px;
 }
 
@@ -611,14 +611,14 @@ h2 {
 }
 
 .cyan-card .center-circle .medal .circle p {
-  opacity: 0.8;
-  font-size: 40px;
+  opacity: .8;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #dca416;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  translate: -50% -50%;
 }
 
 .cyan-card .center-circle .medal .circle .triangle {
@@ -666,7 +666,7 @@ h2 {
   position: absolute;
   left: -35px;
   top: -6px;
-  transform: rotate(30deg);
+  rotate: 30deg;
 }
 
 .cyan-card .center-circle .medal .circle .triangle3::before {
@@ -686,7 +686,7 @@ h2 {
   position: absolute;
   left: -7px;
   top: -34px;
-  transform: rotate(60deg);
+  rotate: 60deg;
 }
 
 .cyan-card .center-circle .medal .circle .triangle4::before {
@@ -706,7 +706,7 @@ h2 {
   position: absolute;
   left: 95px;
   top: -6px;
-  transform: rotate(150deg);
+  rotate: 150deg;
 }
 
 .cyan-card .center-circle .medal .circle .triangle5::before {
@@ -726,7 +726,7 @@ h2 {
   position: absolute;
   left: 67px;
   top: -34px;
-  transform: rotate(120deg);
+  rotate: 120deg;
 }
 
 .cyan-card .center-circle .medal .circle .triangle6::before {
@@ -750,7 +750,7 @@ h2 {
   width: 38px;
   height: 40px;
   background-color: #2ba1fb;
-  transform: rotate(20deg);
+  rotate: 20deg;
   margin-left: 18px;
 }
 
@@ -780,10 +780,10 @@ h2 {
   width: 38px;
   height: 40px;
   background-color: #2ba1fb;
-  transform: rotate(-20deg);
+  rotate: -20deg;
   position: absolute;
   left: 52px;
-  top: 0px;
+  top: 0;
 }
 
 .cyan-card .center-circle .medal .fabric .fabric-right::before {
@@ -807,13 +807,8 @@ h2 {
   border-top: 15px solid #2ba1fb;
   border-left: 20px solid transparent;
 }
+
 /*? Cyan or Blue [Start] */
-
-
-
-
-
-
 
 
 
@@ -853,7 +848,7 @@ h2 {
 .game-cards div span {
   display: block;
   color: #fff;
-  font-size: 140px;
+  font-size: 8.75rem;
   rotate: -26deg;
   font-weight: bold;
   position: relative;
@@ -863,7 +858,7 @@ h2 {
 .game-cards div span::after {
   content: attr(data-number);
   position: absolute;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .game-cards div span::before {
@@ -879,11 +874,7 @@ h2 {
 .game-cards div span::after {
   right: -36px;
   bottom: -50px;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  rotate: 180deg;
 }
 
 .game-cards div span.line::after {
@@ -901,23 +892,8 @@ h2 {
 .game-cards div span.line::after {
   text-decoration: inherit;
 }
+
 /* Game cards [End] */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
